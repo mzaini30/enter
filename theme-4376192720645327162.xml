@@ -14,9 +14,8 @@
 <meta content='https://www.facebook.com/mzaini30' property='fb:profile_id'/>
 <meta expr:content='data:blog.url' property='og:url'/>
 <meta content='article' property='og:type'/>
-	<b:includable id="postBodySnippet" var="post">
 <meta content='data:post.featuredImage' property='og:image'/>
-		</b:includable>
+		
 <b:if cond='data:blog.url == data:blog.homepageUrl'>
 <meta expr:content='data:blog.title' property='og:title'/>
 <meta content='Kalau kita berusaha, apa sih yang nggak mungkin?' property='og:description'/>
@@ -35,9 +34,8 @@
 <meta content='summary_large_image' name='twitter:card'/>
 <meta content='Ayo Berjuang!' name='twitter:site'/>
 <meta content='@mzaini30' name='twitter:creator'/>
-	  <b:includable id="postBodySnippet" var="post">
 <meta content='data:post.featuredImage' name='twitter:image'/>
-	  </b:includable>
+	
 <b:if cond='data:blog.url == data:blog.homepageUrl'>
 <meta expr:content='data:blog.title' name='twitter:title'/>
 <meta content='Kalau kita berusaha, apa sih yang nggak mungkin?' name='twitter:description'/>
