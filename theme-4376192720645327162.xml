@@ -4,6 +4,49 @@
   <head>
     <meta content='width=device-width, initial-scale=1' name='viewport'/>
     <title><data:view.title.escaped/></title>
+	  
+	  <!-- Facebook open graph -->
+
+<meta content='id_id' property='og:locale'/>
+<meta content='en_US' property='og:locale:alternate'/>
+<meta expr:content='data:blog.title' property='og:site_name'/>
+<meta content='https://www.facebook.com/mzaini30' property='fb:admins'/>
+<meta content='https://www.facebook.com/mzaini30' property='fb:profile_id'/>
+<meta expr:content='data:blog.url' property='og:url'/>
+<meta content='article' property='og:type'/>
+<meta content='data:blog.postImageUrl' property='og:image'/>
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
+<meta expr:content='data:blog.title' property='og:title'/>
+<meta content='Kalau kita berusaha, apa sih yang nggak mungkin?' property='og:description'/>
+<b:else/>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<meta expr:content='data:blog.pageName' property='og:title'/>
+<meta expr:content='data:blog.pageName + &quot;, &quot; + data:blog.title' property='og:description'/>
+</b:if>
+</b:if>
+
+<!-- end open graph -->
+
+================================================
+
+<!-- Twitter Cards -->
+
+<meta content='summary_large_image' name='twitter:card'/>
+<meta content='Ayo Berjuang!' name='twitter:site'/>
+<meta content='@mzaini30' name='twitter:creator'/>
+<meta content='data:blog.postImageUrl' name='twitter:image'/>
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
+<meta expr:content='data:blog.title' name='twitter:title'/>
+<meta content='Kalau kita berusaha, apa sih yang nggak mungkin?' name='twitter:description'/>
+<b:else/>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<meta expr:content='data:blog.pageName' name='twitter:title'/>
+<meta expr:content='data:blog.pageName + &quot;, &quot; + data:blog.title' name='twitter:description'/>
+</b:if>
+</b:if>
+
+<!-- end Twitter Cards -->
+	  
     <b:include data='blog' name='all-head-content'/>
 
     <b:skin version='1.0.0'><![CDATA[/* 
