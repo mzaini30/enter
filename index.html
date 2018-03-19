@@ -9,7 +9,7 @@
     	textarea.form-control {
     		height: 200px;
     	}
-    	tr > td {
+    	.table > tbody > tr > td {
     		border-top: none;
     	}
     </style>
@@ -24,13 +24,15 @@
 		<table class="table">
 			<tr>
 				<td>
-					<textarea class="form-control"></textarea>
+					<textarea class="form-control input"></textarea>
 				</td>
 				<td>
-					<textarea class="form-control" readonly></textarea>
+					<textarea class="form-control output" readonly></textarea>
 				</td>
 			</tr>
 		</table>
 	</div>
+	<script type="text/javascript" src="bin/jquery.min.js"></script>
+	<script type="text/javascript" src="bin/app.js"></script>
 </body>
 </html>
